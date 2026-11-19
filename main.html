@@ -1,47 +1,33 @@
-<!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-	<form method="post">
-
-  <label for="name">Name</label>
-  <input type="text" id="name" required>
-
-  <label for="email">Email</label>
-  <input type="email" id="email" required>
-
-  <label>Gender</label>
-  <input type="radio" name="gender" value="male" required> Male
-  <input type="radio" name="gender" value="female"> Female
-
-  <label for="cars">Car Brands</label>
-  <select id="cars">
-    <option value="BMW">BMW</option>
-    <option value="Audi">Audi</option>
-    <option value="Mercedez">Mercedez</option>
-  </select>
-
-  <label for="carage">Car Age</label>
-  <input type="number" id="carage" required>
-
-  <label for="dop">Date of Purchase</label>
-  <input type="date" id="dop" required>
-
-  <label for="password">Password</label>
-  <input type="password" id="password" required>
-
-  <button type="submit">Submit</button>
-
-</form>
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+<form method="post">
+		<label for="name">Name*</label>
+		<input type="text" id="name" required>
+		<br>
+		<label for="email">Email*</label>
+		<input type="email" id="email" required>
+		<br>
+		<label for="male">Male</label>
+		<input type="radio" id="male" name="gender" required>
+		<label for="female">Female</label>
+		<input type="radio" id="female" name="gender" required>
+		<br>
+		<label for="laptop">Laptop</label>
+		<select id="laptop">
+			<option value="">Select</option>
+			<option value="apple">Apple</option>
+			<option value="asus">Asus</option>
+			<option value="hp">HP</option>
+		</select>
+		<br>
+		<label for="age">Age*</label>
+		<input type="number" id="age" required>
+		<br>
+		<label for="dob">Date of Birth*</label>
+		<input type="date" id="dob" required>
+		<br>
+		<label for="password">Password*</label>
+		<input type="password" id="password" required>
+		<br>
+		<input id="portfolio" type="url" required="required">
+		<br>
+		<button type="submit">Submit</button>
+	</form>
